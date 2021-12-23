@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* FONTS */
+@font-face {
+    font-family: "font-1";
+    src: url(/styles/fonts/Roboto-Thin.ttf);
+}
+@font-face {
+    font-family:"font--1";
+    src: url(/styles/fonts/Roboto-Bold.ttf);
+}
+@font-face {
+    font-family: "font-2";
+    src: url(/styles/fonts/Poppins-Medium.ttf);
+}
+@font-face {
+    font-family: "font-special";
+    src: url(../styles/fonts/Allura-Regular.ttf);
+}
+/* Reglages généreaux */
+html{
+    scroll-behavior: smooth;
+    
+}
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+/*  Réglages spécifiques*/
+
+nav a:visited{
+    color:rgb(0, 0, 0);
+}
+
+h1{
+    font-family: "font-1";
+}
+ /* ----  Body --- */
+
+body{
+    
+text-align: center;
+font-family: "font-2";
+}
