@@ -316,7 +316,7 @@ footer .footer-container .rigth-footer .icon .item-icon i {
 }
 
 header {
-  background: url(/styles/img/bg-slider-06.jpg) center/cover;
+  background: url(../styles/img/bg-slider-06.jpg) center/cover;
   min-height: 100vh;
 }
 
