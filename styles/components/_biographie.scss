@@ -30,6 +30,10 @@
                 font-size: 0.9rem; 
                 line-height: 20px;
                
+                @media (max-width:690px) {
+                    font-size: 0.8rem;
+                    margin-top: 55px;
+                }
         }
         h2{
             padding-top: 20px;
@@ -45,5 +49,14 @@
             font-size: 0.8rem;
             letter-spacing: 2px;
         }
+    }
+}
+
+/* MEDI QUETRIES */
+
+@media  (max-width:690px) {
+    .biographie .info-bio {
+       padding: 0px;
+
     }
 }

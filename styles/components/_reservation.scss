@@ -16,6 +16,10 @@
        left: 50%;
        transform: translate(-50%, -50%);
        background: white;
+
+       @media (max-width:690px) {
+           top: 80%;
+       }
       
 
        
@@ -112,10 +116,12 @@
                 width: 90%;
                border: none;
                border-bottom: 1px solid rgb(211, 209, 209);
-               }
-              
 
-            
+               @media (max-width:690px) {
+                    width: 70%;
+                    
+               }
+               }    
            }
            .date{
             display: flex;
@@ -128,6 +134,10 @@
              width: 90%;
              border: none;
              border-bottom: 1px solid rgb(211, 209, 209);
+
+             @media (max-width:690px) {
+                width: 70%;
+           }
             }
 
             
@@ -144,7 +154,10 @@
              width: 90%;
              border: none;
              border-bottom: 1px solid rgb(211, 209, 209);
-            
+
+             @media (max-width:690px) {
+                    width: 70%;
+               }
             }
 
            }
@@ -170,7 +183,15 @@
                    border: none;
                    font-weight: bold;
                }
+
+               @media (max-width:690px) {
+                padding: 8px 20px;
+                margin-bottom: 10px;
+                font-size: 0.7rem;
+
+            }
            }
+           
        }
     }
     
@@ -181,16 +202,6 @@
         }
         .open-date .right .resa {
         margin: 0;
-        }
-        .btn button {
-            letter-spacing: 1px;
-            color: rgb(132, 15, 15);
-            /* padding: 22px 40px; */
-            border-radius: 40px;
-            background: black;
-            text-transform: uppercase;
-            font-size: 0.6rem;
-           
         }
     }
 }
