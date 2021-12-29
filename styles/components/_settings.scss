@@ -45,7 +45,13 @@ h1{
  /* ----  Body --- */
 
 body{
-    
 text-align: center;
 font-family: "font-2";
+}
+h3{
+    font-family: "font-special";
+    color: rgba(245, 165, 91, 0.571);
+    font-size: 2rem;
+    text-transform: capitalize;
+    font-weight: lighter;
 }

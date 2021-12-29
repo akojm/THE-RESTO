@@ -31,18 +31,18 @@
           <li><a href="#">contact</a></li>
         </ul>
       </nav>
-        <div class="icon-reseaux">
-          <ul class="rigth">
-            <li><i class="fab fa-twitter"></i></li>
-            <li><i class="fab fa-facebook-f"></i></li>
-            <li><i class="fab fa-instagram"></i></li>
-          </ul>
-        </div>
+      <div class="icon-reseaux">
+        <ul class="rigth">
+          <li><i class="fab fa-twitter"></i></li>
+          <li><i class="fab fa-facebook-f"></i></li>
+          <li><i class="fab fa-instagram"></i></li>
+        </ul>
       </div>
-  <h2>Welcome to</h2>
-  <h1>The resto</h1>
-  <div><img src="./styles/img/ic-plate.png" alt="image-plate" /></div>
-  <p>We serve only the freshest ingredient !</p>
+    </div>
+    <h2>Welcome to</h2>
+    <h1>The resto</h1>
+    <div><img src="./styles/img/ic-plate.png" alt="image-plate" /></div>
+    <p>We serve only the freshest ingredient !</p>
   </header>
 
   <main>
@@ -56,12 +56,13 @@
             <h4>our store</h4>
           </div>
           <img src="./styles/img/ic-plate.png" alt="image-plate">
-          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint repudiandae pariatur obcaecati qui sed facilis
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint repudiandae pariatur obcaecati qui sed
+            facilis
             suscipit aut ipsam quae tenetur est itaque eum dicta quod culpa nobis, labore aliquam repellat?</p>
           <div class="chef">
-            <img src="./styles/img/avatar-01.jpg" alt="image-chef">
+            <img src="./styles/img/avatar-01.jpg" alt="image-chef" class="image-chef">
             <h5>Russell Stephens</h5>
-            <p>chef cook</p>
+            <h6>chef cook</h6>
           </div>
         </div>
         <div class="right">
@@ -157,45 +158,63 @@
     <!-- --- RESERVATION  --- -->
 
     <section class="reservation">
-      <div class="date-open">
+      <div class="open-date">
         <div class="left-resa">
-          <h3>Time</h3>
-          <h4>open</h4>
-          <img src="./styles/img/ic-plate.png" alt="icon-plat">
 
-          <h5>monday - friday</h5>
-          <p>7AM - 11AM (Breakfast)</p>
-          <p>11AM - 10PM (Lunch/Dinner)</p>
+          <div class="info-left">
+            <div>
+              <h3>Time</h3>
+              <h4>open</h4>
+            </div>
 
-          <h5>Saturday / sunday</h5>
-          <p>8AM - 1PM (Brunch)</p>
-          <p>1PM - 9PM (Lunch/Dinner)</p>
+            <img src="./styles/img/ic-plate.png" alt="icon-plat">
 
-          <h5>+15 890 979 25 52</h5>
+            <h5>monday - friday</h5>
+
+            <div>
+              <p>7AM - 11AM (Breakfast)</p>
+              <p>11AM - 10PM (Lunch/Dinner)</p>
+            </div>
+
+
+            <h5>Saturday / sunday</h5>
+
+            <div>
+              <p>8AM - 1PM (Brunch)</p>
+              <p>1PM - 9PM (Lunch/Dinner)</p>
+            </div>
+
+            <h5>+15 890 979 25 52</h5>
+          </div>
+
+
         </div>
         <div class="right">
-          <h3>Reservation</h3>
-          <h2>online booking</h2>
+          <div class="resa">
+            <h3>Reservation</h3>
+            <h4>online booking</h4>
+          </div>
+
           <img src="./styles/img/ic-plate.png" alt="icon-plate">
 
           <div class="horaire">
             <div class="people">
-              <label for="people">People</label>
-              <select name="" id="people"></select>
-              <label for="name">name</label>
-              <input type="text" name="" id="name">
+              <select name="" id="people" class="people">
+                <option value="">People</option>
+              </select>
+              <input type="text" name="" id="name" placeholder="Name" class="name">
             </div>
             <div class="date">
-              <input type="datetime-local" name="" id="">
-              <label for="phone">Phone</label>
-              <input type="text" name="phone" id="phone">
+              <input type="date" name="" id="" class="date-time">
+              <input type="text" name="phone" id="phone" placeholder="Phone" class="phone">
             </div>
             <div class="time">
-              <input id="appt-time" type="time" name="appt-time">
-              <label for="email">Email</label>
-              <input type="text" name="" id="email">
+              <input id="appt-time" type="time" name="appt-time" class="timer">
+              <input type="text" name="" id="email" placeholder="Email" class="mail">
             </div>
 
+          </div>
+          <div class="btn">
             <button type="submit" value="book now">Book now</button>
           </div>
         </div>
@@ -203,17 +222,22 @@
       </div>
     </section>
 
+
     <!-- ---   OUR EVENT ---- -->
-    <section class="event">
-      <div class="container">
-        <h3>upcoming</h3>
-        <h2>Our event</h2>
-        <div class="container-item">
-          <div class="left-event-1">
+
+
+
+    <section class="events">
+      <div class="container-item">
+        <h2>Upcoming</h2>
+        <h4>OUR EVENT</h4>
+        <img src="./styles/img/ic-plate.png" alt="icon-plate">
+        <div class="event-grid">
+          <div class="event-1 event-left">
             <div class="date">
-              <div class="date-item">
-                <h5>08</h5>
-                <p>July</p>
+              <div class="date-content">
+                <h6>08</h6>
+                <span>July</span>
               </div>
             </div>
             <div class="infos">
@@ -222,23 +246,23 @@
               <h5>BUY TICKETS</h5>
             </div>
           </div>
-          <div class="left-event-2">
+          <div class="event-2 event-left">
             <div class="date">
-              <div class="date-item">
-                <h5>08</h5>
-                <p>July</p>
+              <div class="date-content">
+                <h6>08</h6>
+                <span>July</span>
               </div>
             </div>
             <div class="infos">
-              <h3>Dj RobagRuhme</h3>
+              <h3>DJ RobagRhume</h3>
               <p><i class="fas fa-map-marker-alt"></i>Restaurant Resto<i class="far fa-clock"></i>10:00pm - 6:00am</p>
               <h5>BUY TICKETS</h5>
             </div>
           </div>
-          <div class="rigth-event-3">
+          <div class="event-3">
             <div class="infos">
               <div class="date">
-                <div class="date-item">
+                <div class="date-content">
                   <h6>08</h6>
                   <span>July</span>
                 </div>
@@ -252,23 +276,25 @@
       </div>
     </section>
 
+
     <!-- -- BIOGRAPHIE --- -->
     <section class="biographie">
+      <div class="image-chef">
+        <img src="./styles/img/avatar-02.jpg" alt="image-chef" srcset="">
+      </div>
       <div class="info-bio">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed repudiandae alias dolorum, vitae rem labore
+        <p> “ Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed repudiandae alias dolorum, vitae rem labore
           obcaecati! Voluptatibus repellendus maxime sed voluptates optio nam aliquid voluptatum, obcaecati nulla
           possimus amet est!
-          Nesciunt voluptates, iusto delectus saepe corrupti quibusdam vel laborum quos nisi fuga doloribus inventore?
-          Iusto placeat ad dolorum tempora laudantium, illum similique minus, porro voluptatum at maxime dolorem esse
-          et.
-          Adipisci sint unde dolores quaerat qui tempore a quo, eum expedita corrupti pariatur asperiores! Veniam quos
-          eius sunt ea consectetur delectus, libero rem, voluptas aliquam labore magnam molestias, eveniet ab.</p>
+          Nesciunt voluptates, iusto delectus saepe corrupti quibusdam vel laborum quos nisi fuga doloribus inventore? ”
+        </p>
         <h2>Russel Stepehns</h2>
-        <span>CEO - HeadPassion</span>
+        <h6>CEO - HeadPassion</h6>
       </div>
     </section>
 
     <!-- --- ADRESSE DU RESTO -->
+
     <section class="plan">
       <div class="map">
         <img src="./styles/img/gmap.jpg" alt="adresse-resto">
@@ -277,25 +303,35 @@
   </main>
   <!-- ---- FOOTER --- -->
   <footer>
-    <div class="left-footer">
-      <div class="logo">resto</div>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum praesentium nesciunt ipsa aperiam, harum
-        pariatur quo, quasi repudiandae molestias similique eum! Quas soluta aliquam saepe obcaecati, hic culpa aut
-        pariatur?</p>
-    </div>
-    <div class="rigth">
-      <label for="news">NEWSLETTER</label>
-      <input type="text" name="news" id="news">
-
-      <div class="icon">
-        <i class="fab fa-twitter"></i>
-        <i class="fab fa-facebook-f"></i>
-        <i class="fab fa-instagram"></i>
-        <i class="fab fa-pinterest-square"></i>
+    <div class="footer-container">
+      <div class="left-footer">
+        <div class="left-item">
+          <span class="logo">resto</span>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum praesentium nesciunt ipsa aperiam, harum
+            pariatur quo, quasi repudiandae molestias similique eum! Quas soluta aliquam saepe obcaecati, hic culpa aut
+            pariatur?</p>
+        </div>
       </div>
-
-
+      <div class="rigth-footer">
+       <div class="rigth-item">
+        <label for="news">NEWSLETTER</label>
+        <input type="text" name="news" id="news" placeholder="Your email address">
+       </div>
+          
+        <div class="icon">
+          <span>Follow us :</span>
+          <div class="item-icon">
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-pinterest-square"></i>
+          </div>
+           
+         
+        </div>
+      </div>
     </div>
+
   </footer>
   <!-- Bootstrap JS -->
   <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script> -->

@@ -1,0 +1,196 @@
+.reservation{
+  min-height: 500px;
+    background: #21201e;
+    position: relative;
+
+
+    .open-date{
+        width: 90%;
+        min-height: 400px;
+       display:grid ;
+       grid-template-columns: 30%  70%;
+       align-items: center;
+       color: white;
+       position: absolute;
+       top: 50%;
+       left: 50%;
+       transform: translate(-50%, -50%);
+       background: white;
+      
+
+       
+
+      .left-resa{
+        background: black;
+        height: 400px;
+        padding: 18px;
+       
+        .info-left{
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+            justify-items: center;
+            border: 1px dashed rgba(255, 248, 248,0.3);
+            padding: 10px;
+           
+
+            h4{
+                margin-top: -12px;
+                font-family: "font-2";
+                text-transform: uppercase;
+            }
+            img{
+                margin-top: 15px;
+            }
+            h5{
+                font-family: "font-2";
+                text-transform: uppercase;
+                font-weight: lighter;
+                font-size: 0.8rem;
+                color: rgba(245, 165, 91, 0.571);
+                margin-top: 10px;
+             
+            }
+            p{
+                font-family: "font-1";
+                font-size: 0.7rem;
+                font-weight: bold;
+            }
+        }  
+
+    }
+    .right{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: black;
+        margin: 0 auto;
+       
+      
+      .resa{
+          margin: -30px 0px 0px 0px;
+      }
+
+        h3{
+            font-size: 2rem;
+            font-weight: bold;
+            letter-spacing: 1px;
+            font-weight: 500;
+            color: rgba(175, 112, 52, 0.71);
+        }
+
+       h4{
+            color: black;
+            font-family: "font-2";
+            text-transform: uppercase;
+            font-size: 1.5rem;
+            letter-spacing: 2px;
+            margin-top: -12px;
+        }
+        img{
+            margin-top: 20px;
+        }
+
+    
+
+       .horaire{
+           display: flex;
+           flex-direction: row;
+           align-items: center;
+           justify-items: center;
+           margin-top: 20px;
+
+
+           .people{
+               display: flex;
+               flex-direction: column;  
+               
+               .name,.people{
+                margin-top: 15px;
+                margin-left: 10px;
+                padding: 5px;
+                width: 90%;
+               border: none;
+               border-bottom: 1px solid rgb(211, 209, 209);
+               }
+              
+
+            
+           }
+           .date{
+            display: flex;
+            flex-direction: column;
+
+            .date-time,.phone{
+            margin-top: 15px;
+             margin-left: 10px;
+             padding: 5px;
+             width: 90%;
+             border: none;
+             border-bottom: 1px solid rgb(211, 209, 209);
+            }
+
+            
+           }
+           .time{
+            display: flex;
+            flex-direction: column;
+            
+
+            .timer,.mail{
+            margin-top: 15px;
+             margin-left: 10px;
+             padding: 5px;
+             width: 90%;
+             border: none;
+             border-bottom: 1px solid rgb(211, 209, 209);
+            
+            }
+
+           }
+          
+       }
+       .btn{
+           margin-top: 30px;
+           width: 50%;
+           button{ font-family: "font-2";
+            font-weight: lighter;
+            letter-spacing: 2px;
+               color: rgb(255, 255, 255);
+               padding: 10px 40px;
+               border-radius: 40px;
+               background: black;
+               text-transform: uppercase;
+               font-size: 0.9rem;
+               cursor: pointer;
+
+               &:hover{
+                   color: black;
+                   background:  rgba(245, 165, 91, 0.571);
+                   border: none;
+                   font-weight: bold;
+               }
+           }
+       }
+    }
+    
+    }
+    @media (max-width:690px) {
+        .open-date{
+            grid-template-columns: 1fr;
+        }
+        .open-date .right .resa {
+        margin: 0;
+        }
+        .btn button {
+            letter-spacing: 1px;
+            color: rgb(132, 15, 15);
+            /* padding: 22px 40px; */
+            border-radius: 40px;
+            background: black;
+            text-transform: uppercase;
+            font-size: 0.6rem;
+           
+        }
+    }
+}

@@ -1,0 +1,154 @@
+.events {
+    background: #21201e;
+    padding: 0px 0 280px;
+  
+    .container-item {
+      max-width: 1000px;
+      margin: 0 auto;
+  
+      h2 {
+          font-family: "font-special";
+        font-size: 2.3rem;
+        color: rgba(175, 112, 52, 0.71);
+        font-weight: 100;
+      }
+      h4 {
+        font-size: 1.5rem;
+        letter-spacing: 2px;
+        font-weight: 900;
+        color: #eee;
+        margin-top: -12px;
+      }
+      img {
+        margin: 40px 0;
+      }
+span{
+  font-family: "font-1";
+  color: white;
+  font-weight: bold;
+}
+
+      .event-grid {
+        display: grid;
+        grid-template-columns: 58% 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas:
+          "event1 event3"
+          "event2 event3";
+        gap: 20px;
+  
+        @media screen and (max-width: 700px) {
+          display: block;
+  
+          > div {
+            margin: 20px;
+          }
+        }
+  
+        .date-content {
+          background: #333;
+          height: 86px;
+          width: 86px;
+          margin: 0 auto;
+          color: #eee;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          line-height: 22px;
+  
+          h6 {
+             font-family: "font-2";
+             color: white;
+            font-size: 1.2rem;
+            font-weight: 300;
+          }
+        }
+        .infos {
+          background: #eee;
+  
+          h3 {
+              font-family: "font-2";
+              color: black;
+            letter-spacing: 1px;
+            font-size: 1.3rem;
+            font-weight: 500;
+            padding-left: 8px;
+          }
+          p {
+              font-family: "font-1";
+            font-size: 0.9rem;
+            font-weight: 800;
+            letter-spacing: 1px;
+            color: gray;
+            margin-top: 10px;
+          
+  
+            i {
+              margin-right: 3px;
+              font-size: 0.7rem;
+              transform: translateY(-2px);
+  
+              &:last-child {
+                margin-left: 10px;
+              }
+            }
+          }
+          h5 {
+              text-transform: uppercase;
+              font-weight: 100;
+            letter-spacing: 2px;
+            font-size: 0.8rem;
+            margin-top: 45px;
+          }
+        }
+        .event-left {
+          display: grid;
+          grid-template-columns: 39% 61%;
+          text-align: left;
+  
+          @media screen and (max-width: 600px) {
+            grid-template-columns: 1fr;
+          }
+  
+          .date {
+            display: flex;
+            align-items: center;
+          }
+          .infos {
+            padding: 30px 20px;
+          }
+        }
+        .event-1 {
+          .date {
+            background: url(./img/event-01.jpg) center/cover;
+          }
+        }
+  
+        .event-2 {
+          grid-area: event2;
+  
+          .date {
+            background: url(./img/event-02.jpg) center/cover;
+          }
+        }
+        .event-3 {
+          grid-area: event3;
+          background: url(./img/event-03.jpg) center/cover;
+          padding: 25px;
+  
+          .infos {
+            height: 100%;
+            padding: 0 12px;
+  
+            h3 {
+              margin: 40px 0 15px;
+            }
+            h5 {
+              padding: 45px;
+            }
+          }
+        }
+      }
+    }
+  }
